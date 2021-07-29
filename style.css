@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 73vw;
+    margin: 0 auto;
+}
+header{
+    background: #1C1C5E;
+    width: 100vw;
+    padding: 10px 0;
+}
+header img{
+    width: 250px;
+}
+.showcase{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background: #F0F0F0;
+    padding-top: 20px;
+}
+.top-text{
+    display: flex;
+    gap: 10px;
+    margin: 0 0 10px 20px;
+}
+.top-text p{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+.top-text span{
+    color: #1C1C5E;
+    font-weight: bold;
+    font-size: 32px;
+}
+.middle-row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 50px;
+}
+.middle-row .middle-left{
+    background-color: #1C1C5E;
+    width: 320px;
+    height: 416px;
+    padding: 50px;
+    position: relative;
+    z-index: 10;
+}
+.middle-row .middle-left::before{
+    content: '';
+    width: 320px;
+    height: 416px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+}
+.middle-row .middle-left hr{
+    margin: 20px 0;
+}
+.middle-row .middle-left h2{
+    color: #3c3c3c;
+    font-weight: bold;
+}
+.middle-row .middle-left p{
+    font-weight: bold;
+}
+.middle-row .middle-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+}
+.middle-row .middle-right h1{
+    font-size: 40px;
+}
+.middle-right .cost{
+    margin-bottom: 20px;
+}
+.middle-row .middle-right .middle-right-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.middle-row .middle-right-bottom .imgs{
+    display: flex;
+    gap: 20px;
+}
+.middle-row .middle-right-bottom img:first-child{
+    width: 120px;
+}
+
+.middle-row  .middle-right-bottom button{
+    padding: 13px 34px;
+    background: #1C1C5E;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.bottom {
+    margin-top: 50px;
+}
+.bottom img{
+    width: 30px;
+}
+.bottom p{
+    font-size: 1.2rem;
+    color: #333;
+}
+.bottom p span{
+    font-weight: bold;
+}
